@@ -42,13 +42,13 @@ mac:
   entitlementsInherit: build/entitlements.mac.plist
   entitlements: build/entitlements.mac.plist
   hardenedRuntime: true
-  gatekeeperAssess: false
+  gatekeeperAssess: true
   extendInfo:
     - NSCameraUsageDescription: Application requests access to the device's camera.
     - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
     - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
     - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
-  notarize: false
+  notarize: true
   artifactName: ${name}-macos-${version}-${arch}.${ext}
 pkg:
   allowAnywhere: false
